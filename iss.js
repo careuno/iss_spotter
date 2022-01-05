@@ -73,6 +73,7 @@ const nextISSTimesForMyLocation = function(callback) { //you need them nesting c
       }
 
       const { latitude, longitude } = JSON.parse(body); //check basics JS.js line 138 for notes on destructuring
+      console.log(latitude, longitude)
       callback(null, { latitude, longitude });
     });
   };

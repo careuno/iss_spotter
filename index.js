@@ -45,7 +45,6 @@ fetchISSFlyOverTimes({ latitude: 43.6426, longitude: -79.4002 }, (error, flyOver
 });
 
 
-
 nextISSTimesForMyLocation((error, passTimes) => {
   if (error) {
     return console.log("It didn't work!", error);
@@ -62,3 +61,5 @@ const printPassTimes = function(flyOverTimes) {
     console.log(`Next pass at ${datetime} for ${duration} seconds!`);
   }
 };
+
+module.exports = { printPassTimes }
